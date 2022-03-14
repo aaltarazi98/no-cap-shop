@@ -6,6 +6,8 @@
 
 Upgrade your keyboard game by by visiting the site at: https://no-cap-shop.netlify.app/
 
+Check out the server repository over at: https://github.com/aaltarazi98/no-cap-server
+
 ## Built With 🖥️
 
 **Client:** React, Redux, React Router, and Material UI
@@ -16,11 +18,21 @@ Upgrade your keyboard game by by visiting the site at: https://no-cap-shop.netli
 
 ## About 🤔
 
-This shop was inspired by [Nixon Watches' website](https://www.nixon.com). It was meant to replicate the site as much as possible with React & MUI. Of course, it was reimagined for selling keyboards! The app fully supports mobile!
+This shop was inspired by [Nixon Watches' website](https://www.nixon.com). It was meant to replicate the site as much as possible with React & MUI. Of course, it was reimagined for selling keyboards!
+
+## Usage 🛠️
+
+Since this is a demo/clone and a work in progress, many features are not fully functional yet and are purely cosmetic.
+
+Currently supported functions: registeration, login, product search, admin pages, adding products, viewing orders, purchasing cart and posting orders!
+
+The app fully supports mobile, so test and play around with it as much as you like
 
 ## Contribute 👏
 
-Since this is a clone and a demonstration, contributions are not accepted...
+Since this is a clone and a demonstration, code contributions are not accepted at this time :( .
+
+You can, however, login and add products to the database! Please make sure to use pictures, names, and prices as outlined in the admin product submission form :D .
 
 ## Contact 📲
 
