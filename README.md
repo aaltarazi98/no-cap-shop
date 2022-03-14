@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Welcome to the No Cap e-Commerce Shop! 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![No Cap Website](https://i.ibb.co/wSGCp1n/no-cap.png)
 
-## Available Scripts
+"No Cap is the one stop shop for premium key caps and keyboards. With a wide range of quality switches, gaming keyboards, keycap sets, and more, No Cap stays true to its code, productivity, and gaming roots. From everyday coding & mechanical keyboards for some hacking to custom keys and switches for professional gaming, there's something for everyone. Whether you need a blue switch keyboard or are looking to add flair to your keyboard, No Cap will key you in. Never stop capping."
 
-In the project directory, you can run:
+Upgrade your keyboard game by by visiting the site at: https://no-cap-shop.netlify.app/
 
-### `npm start`
+## Built With 🖥️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Client:** React, Redux, React Router, and Material UI
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Server:** Node, Express, Mongoose
 
-### `npm test`
+**Database:** MongoDB Atlas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About 🤔
 
-### `npm run build`
+This shop was inspired by [Nixon Watches' website](https://www.nixon.com). It was meant to replicate the site as much as possible with React & MUI. Of course, it was reimagined for selling keyboards! The app fully supports mobile!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contribute 👏
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Since this is a clone and a demonstration, contributions are not accepted...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact 📲
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Be sure to reach out to me via my github profile with any bugs or recommendations! 🙋
