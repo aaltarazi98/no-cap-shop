@@ -6,7 +6,7 @@ import {
   Container,
 } from "@mui/material";
 import { ProductType } from "./types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import theme from "./theme";
 import { StoreBar } from "./components/StoreBar";
@@ -24,6 +24,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import { OrderStatus } from "./components/OrderStatus";
 import { Missing } from "./components/Missing";
+import axios from "axios";
 
 const stripePromise = loadStripe(
   "pk_test_51KbdJaKUrMl18TxeshrupV7f6bmv6LtqQvHpvz9Vw6EsxcdOdLFXRUWLJbi5xG9zX5T4L5W3KIBo7kKYwzFh7cIU000DKyEEmv"
@@ -33,6 +34,11 @@ function App() {
   const [search, setSearch] = useState<string>("");
   const [product, setProduct] = useState<ProductType>();
   const [showCart, setShowCart] = useState<boolean>(false);
+
+  useEffect(() => {
+    // To wake up server when someone connects to client
+    axios(process.env.REACT_APP_SERVER!);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>

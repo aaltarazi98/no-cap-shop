@@ -10,9 +10,9 @@ Check out the server repository over at: https://github.com/aaltarazi98/no-cap-s
 
 ## Built With 🖥️
 
-**Client:** React, Redux, React Router, and Material UI
+**Client:** React, Redux, React Router, Material UI, Stripe. Hosted on Netlify.
 
-**Server:** Node, Express, Mongoose
+**Server:** Node, Express, Mongoose, Stripe. Hosted on Heroku.
 
 **Database:** MongoDB Atlas
 

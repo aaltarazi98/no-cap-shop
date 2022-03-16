@@ -12,7 +12,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ProductType } from "../types";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
@@ -49,6 +49,7 @@ export function Checkout() {
   const stripe = useStripe();
   const elements = useElements();
   const navigate = useNavigate();
+  const formRef = useRef<HTMLFormElement>(null);
   const { cart, isLoading, isError, isSuccess, message } = useSelector(
     (state: RootState) => state.cart
   );
@@ -74,7 +75,6 @@ export function Checkout() {
         address,
       };
       dispatch(purchase(orderData));
-      e.currentTarget.reset();
     } else {
       console.error(error);
     }
@@ -86,7 +86,8 @@ export function Checkout() {
     if (isError) {
       console.error(message);
     } else if (isSuccess) {
-      console.log("Order success");
+      formRef?.current?.reset()
+      dispatch(reset)
     }
     let total = 0;
     cart?.map((item) => (total += item.price));
@@ -175,6 +176,7 @@ export function Checkout() {
           px={{ xs: 2, lg: 8 }}
           component="form"
           onSubmit={handlePurchase}
+          ref={formRef}
         >
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Shipping address

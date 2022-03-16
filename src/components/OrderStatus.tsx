@@ -29,7 +29,7 @@ export function OrderStatus() {
   async function fetchAndSetOrders(): Promise<void> {
     const data = await axios({
       method: "GET",
-      url: "http://localhost:4000/api/orders/" + user._id,
+      url: process.env.REACT_APP_SERVER! + "/orders/" + user._id,
       headers: {
         Authorization: "Bearer " + user.token,
       },
